@@ -12,13 +12,12 @@ app.use(express.static(publicPath));
 
 io.on('connection', (socket) => {
 	console.log('User connected from server side!');
-	socket.emit('newMessage', {
-		from: 'aarti',
-		text: 'i love you.',
-		createdAt: 123
-	});
 	socket.on('createMessage', (message) => {
-		console.log('createMessage:', message);
+		io.emit('newMessage', {
+			from: message.from,
+			text: message.text,
+			createdAt: new Date().getTime()
+		});
 	});
 	socket.on('disconnect', () => {
 		console.log('User disconnected from server side!');
