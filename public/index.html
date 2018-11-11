@@ -9,5 +9,15 @@
 	<header>
 		<h1>Hello express.</h1>
 	</header>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io();
+		socket.on('connect', () => {
+			console.log('User connected from client side!');
+		});
+		socket.on('disconnect', () => {
+			console.log('User disconnected from client side!');
+		});
+	</script>
 </body>
 </html>
