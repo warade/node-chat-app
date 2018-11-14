@@ -49,10 +49,6 @@ npm run test-watch
 3. List of active users in the room is shown in the people column.
 4. When user joins or leaves, corresponding message is sent. eg(User has left!)
 
-```
-npm run test-watch
-```
-
 ## Deployment
 
 Added on [heroku](https://blooming-lake-95690.herokuapp.com/) 
