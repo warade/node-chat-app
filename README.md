@@ -10,7 +10,7 @@ A Chat app using NodeJS, ExpressJS, jQuery.
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Browser, NodeJS and NPM, operating system
 ```
 
 ### Installing
