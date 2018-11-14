@@ -42,6 +42,16 @@ Run the tests using
 ```
 npm run test-watch
 ```
+## Functions
+
+1. Users can chat in different rooms
+2. Location can be sent by the user.
+3. List of active users in the room is shown in the people column.
+4. When user joins or leaves, corresponding message is sent. eg(User has left!)
+
+```
+npm run test-watch
+```
 
 ## Deployment
 
